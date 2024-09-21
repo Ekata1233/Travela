@@ -63,8 +63,8 @@ function Header() {
         </div>
         {/* ------------------------------------------------------------------------ */}
         {/* ----------------------Navrbar Start--------------------------------------------- */}
-        <div className=''>
-        <Navbar expand="lg" className=" navbar bg-success  ps-lg-4 ps-md-3 py-4">
+        <div>
+        <Navbar expand="lg" className=" bg-transparent position-fixed w-100 z-index-10" style={{backdropFilter:"blur(1px)", py:'4'}}>
       <Container fluid>
      <h1 className='ps-2 text-light'> <IoLocationSharp />Travela</h1>
         {/* <Navbar.Brand href=" #"><h1></h1></Navbar.Brand> */}
@@ -75,54 +75,56 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <div className=' blue  py-3 px-3' style={{marginTop:"-3px"}}>
-                <Nav.Link href="#action1" className='fw-bold  py-4 text-light' >Home</Nav.Link>
+            <div className='blue py-3 px-3' style={{marginTop:"-3px", backgroundColor:""}} >
+                <Nav.Link href="/" className='fw-bold  py-4 text-light' >Home</Nav.Link>
 
             </div>
-            <div className=' blue  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
 
-            <Nav.Link href="#action2" className='fw-bold py-4 text-light'>About</Nav.Link>
+            <Nav.Link href="/About" className='fw-bold py-4 text-light'>About</Nav.Link>
             </div>
-            <div className=' blue  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
 
-            <Nav.Link href="#action2" className='fw-bold py-4 text-light'>Services</Nav.Link>
+            <Nav.Link href="/Services" className='fw-bold py-4 text-light'>Services</Nav.Link>
             </div>
-            <div className=' blue  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
 
-            <Nav.Link href="#action2" className='fw-bold py-4 text-light'>Packages</Nav.Link>
+            <Nav.Link href="Packages" className='fw-bold py-4 text-light'>Packages</Nav.Link>
             </div>
-            <div className=' blue  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
 
-            <Nav.Link href="#action2" className='fw-bold py-4 text-light'>Blog</Nav.Link>
+            <Nav.Link href="Blog" className='fw-bold py-4 text-light'>Blog</Nav.Link>
             </div>
-            <div className=' blue  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
 
-            <NavDropdown title={<span className='text-light'>pages</span>} className='fw-bold py-3 ' id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Destination</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+            <NavDropdown title={<span className='text-light '>pages</span> } className='fw-bold py-3' id="navbarScrollingDropdown" style={{position:"relative"}} >
+             <div style={{position:"absolute", top:"50px"}}>
+                 <NavDropdown.Item href="/Destination">Destination</NavDropdown.Item>
+              <NavDropdown.Item href="/Exploretour">
                 Explore Tour
               </NavDropdown.Item>
               
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item href="/TrevelBook">
                Travel Booking
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item href="/Ourgallary">
                Our Gallery
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item href="/TravelGuide">
                Travel Guides
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item href="/Traveltesti">
                Travel Testimonial
               </NavDropdown.Item>
+             </div>
             </NavDropdown>
             </div>
-            <div className=' blue  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
 
-            <Nav.Link href="#action2" className='fw-bold py-4 text-light'>Contact</Nav.Link>
+            <Nav.Link href="Contact" className='fw-bold py-4 text-light'>Contact</Nav.Link>
             </div>
             <div className='py-3'>
-            <Button variant="outline-light" className='rounded-pill fw-bold me-5 py-2 ms-3 mt-3' style={{backgroundColor:"#13357B"}}>Book Now</Button> 
+            <Button variant="" className='rounded-pill fw-bold me-5 py-2 ms-3 mt-3 text-white' style={{backgroundColor:"#13357B"}}>Book Now</Button> 
             </div>
           </Nav>
           

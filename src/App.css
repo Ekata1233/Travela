@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
   
 }
 
@@ -14,10 +15,31 @@
  right: 0%; 
 
 }
+.blue1:hover{
+  background-color: #13357b;
+
+}
 .navbar{
   width: 100%;
+  position: absolute;
+  z-index: 10;
+  
 }
 
 #navbarScrollingDropdown::after{
   border-top-color: #f8f9fa;
+}
+.carousel .carousel-item{
+  height: 900px;
+  margin-top: -90px;
+}
+.carousel .carousel-caption{
+ position: absolute;
+ top: 30%;
+}
+.h11{
+  font-weight:bold;
+  font-size: 65px;
+  font-family:''Roboto', sans-serif';
+  
 }
