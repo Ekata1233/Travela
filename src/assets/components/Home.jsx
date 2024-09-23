@@ -22,11 +22,11 @@ function Home() {
         />
         
         <Carousel.Caption className='text-light' >
-        <h3 className='fw-bold mb-4 '>EXPLORER THE WORLD</h3>
+        <h3 className='fw-bold mb-4 h33'>EXPLORER THE WORLD</h3>
         <h1 className='h11 mb-5 '>Find Your Perfect Tour At Travel</h1>
 
-          <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
-          <Button variant="" className='rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 text-white' style={{backgroundColor:"#13357B"}}>Discover Now</Button> 
+          <h5 className='h55'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
+          <Button variant="" className='discovernow rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 text-white' style={{backgroundColor:"#13357B"}}>Discover Now</Button> 
 
           
         </Carousel.Caption>
@@ -40,11 +40,11 @@ function Home() {
           alt="Second slide"
           style={{filter: 'brightness(50%)'}}
         />
-        <Carousel.Caption className='text-light' >
-          <h3 className='fw-bold mb-4'>EXPLORER THE WORLD</h3>
+        <Carousel.Caption className='text-light ' >
+          <h3 className='fw-bold mb-4 h33'>EXPLORER THE WORLD</h3>
           <h1 className='h11 mb-5'>Let's The World Together!</h1>
-          <h5 className=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
-          <Button variant="" className='rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 text-white' style={{backgroundColor:"#13357B"}}>Discover Now</Button> 
+          <h5 className='h55'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
+          <Button variant="" className='rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 text-white ' style={{backgroundColor:"#13357B"}}>Discover Now</Button> 
 
         </Carousel.Caption>
       </Carousel.Item>
@@ -56,9 +56,9 @@ function Home() {
           style={{filter: 'brightness(50%)'}}
         />
         <Carousel.Caption className='text-light' >
-          <h5 className='fw-bold mb-4'>Third slide label</h5>
-          <h1 className='h11 mb-5'>You Like To Go?</h1>
-          <h5>
+        <h3 className='fw-bold mb-4 h33'>EXPLORER THE WORLD</h3>
+        <h1 className='h11 mb-5'>You Like To Go?</h1>
+          <h5 className='h55'>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
 </h5>
 <Button variant="" className='rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 text-white' style={{backgroundColor:"#13357B"}}>Discover Now</Button> 
@@ -78,7 +78,7 @@ function Home() {
           aria-describedby="basic-addon2"
           className='p-3 rounded-pill'
         />
-        <Button variant="outline-secondary" id="button-addon2" className='position-absolute me-2 py-2 px-4 mt-1 mb-4 rounded-pill fw-bold'>
+        <Button variant="outline-secondary" id="button-addon2" className='white-btn position-absolute me-2 py-2 px-4 mt-1 mb-4 rounded-pill fw-bold '  >
           Search
         </Button>
       </InputGroup>

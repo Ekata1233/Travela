@@ -60,31 +60,16 @@ top: 0;
  position: absolute;
  top: 30%;
 }
+.carousel .carousel-caption .btn:hover{
+  background-color: white;
+}
 .h11{
   font-weight:bold;
   font-size: 65px;
   /* font-family:''Roboto', sans-serif'; */
 }
   
-  @media screen and (max-width:1200px){
-  
-    
-    .h11{
-      font-size: 60px;
-    }
-  }
 
-@media (max-width:768px){
-  
-  .cimg{
-   height: 700px;
-  }
-  .h11{
-    font-size: 40px;
-  }
-   
-  
-}
 .custom-toggle {
   border-color: white !important; /* White border for the toggle button */
 
@@ -98,7 +83,13 @@ top: 0;
     transform: translateY(-50%);
     background-color: #13357b;
     color: white;
+    transition: backgroundcolor 5s;
 }
+.blue .btn:hover{
+  background-color: #f8f9fa;
+  color: black;
+}
+
 .search{
 left: 12%;
 top: 90%;
@@ -135,5 +126,51 @@ top: 90%;
 
 }
 
+
+
+
+@media screen and (max-width:1200px){
+  
+    
+  .h11{
+    font-size: 60px;
+  }
+}
+
+@media (max-width:768px){
+
+.cimg{
+ height: 800px;
+}
+.h11{
+  font-size: 35px;
+}
+.h55{
+}
+.h33{
+  margin-top: -60px;
+  font-size: 23px;
+
+}
+
+}
+@media (max-width:567px){
+
+  .cimg{
+   height: 670px;
+  }
+  .h11{
+    font-size: 27px;
+   
+  }
+  .h55{
+    font-size: 15px;
+  }
+  .h33{
+    font-size: 15px;
+    margin-top: -50px;
+  }
+  
+  }
 
 
