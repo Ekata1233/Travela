@@ -70,7 +70,7 @@ function Header() {
         <Navbar.Toggle aria-controls="navbarScroll" className="custom-toggle"/>
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className=" navbar-light me-auto my-2 my-lg-0 "
+            className=" navbar-light me-auto my-2 my-lg-0 custom-navbar"
             style={{ maxHeight: '100px', height:"100px" }}
             navbarScroll
           >
@@ -96,7 +96,7 @@ function Header() {
             </div>
             <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
 
-            <NavDropdown title={<span className='text-light '>Pages</span> } className='fw-bold py-3' id="navbarScrollingDropdown">
+            <NavDropdown title={<span className=' ' id='pages'>Pages</span> } className='fw-bold py-3' id="navbarScrollingDropdown">
              <div style={{}}>
                  <NavDropdown.Item href="/Destination">Destination</NavDropdown.Item>
               <NavDropdown.Item href="/Exploretour">
@@ -123,7 +123,7 @@ function Header() {
             <Nav.Link href="Contact" className='fw-bold py-4 text-light'>Contact</Nav.Link>
             </div>
             <div className='py-3'>
-            <Button variant="" className='rounded-pill fw-bold me-5 py-2 ms-3 mt-3 text-white' style={{backgroundColor:"#13357B"}}>Book Now</Button> 
+            <Button variant=""  id='discovernow'className='rounded-pill fw-bold me-5 py-2 ms-3 mt-3 '>Book Now</Button> 
             </div>
           </Nav>
           

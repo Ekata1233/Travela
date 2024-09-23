@@ -9,7 +9,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 function Home() {
   return (
     <div  style={{ maxHeight: '100vh', overflow: 'hidden' }}>
-        <div >  
+        <div className=''>  
         <Carousel data-bs-theme="dark" className='' >
             
       <Carousel.Item >
@@ -26,7 +26,7 @@ function Home() {
         <h1 className='h11 mb-5 '>Find Your Perfect Tour At Travel</h1>
 
           <h5 className='h55'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
-          <Button variant="" className='discovernow rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 text-white' style={{backgroundColor:"#13357B"}}>Discover Now</Button> 
+          <Button variant="" id='discovernow' className=' rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 ' >Discover Now</Button> 
 
           
         </Carousel.Caption>
@@ -44,7 +44,7 @@ function Home() {
           <h3 className='fw-bold mb-4 h33'>EXPLORER THE WORLD</h3>
           <h1 className='h11 mb-5'>Let's The World Together!</h1>
           <h5 className='h55'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
-          <Button variant="" className='rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 text-white ' style={{backgroundColor:"#13357B"}}>Discover Now</Button> 
+          <Button variant="" className='rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5  ' id='discovernow'>Discover Now</Button> 
 
         </Carousel.Caption>
       </Carousel.Item>
@@ -61,7 +61,7 @@ function Home() {
           <h5 className='h55'>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
 </h5>
-<Button variant="" className='rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 text-white' style={{backgroundColor:"#13357B"}}>Discover Now</Button> 
+<Button variant="" className='rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 ' id='discovernow'>Discover Now</Button> 
 
         </Carousel.Caption>
 
@@ -78,7 +78,7 @@ function Home() {
           aria-describedby="basic-addon2"
           className='p-3 rounded-pill'
         />
-        <Button variant="outline-secondary" id="button-addon2" className='white-btn position-absolute me-2 py-2 px-4 mt-1 mb-4 rounded-pill fw-bold '  >
+        <Button variant="outline-primary" id="button-addon2" className='white-btn position-absolute me-2 py-2 px-4 mt-1 mb-4 rounded-pill fw-bold '  >
           Search
         </Button>
       </InputGroup>
