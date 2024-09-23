@@ -19,7 +19,7 @@ function Header() {
   return (
     <div>
         
-        <div className=' blue container-fluid px-4 py-2 text-center d-none d-lg-block' >
+        <div className=' blue container-fluid px-4 py-2 text-center d-none d-lg-block ' >
         <span className='d-flex text-light'>
         <div className='ps-4'>
             <FaTwitter className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px"}}/>
@@ -34,7 +34,7 @@ function Header() {
         </div>
 
         {/* ------------------------------------------------------------------ */}
-        <FaUser  className='px-2 py-2 ' style={{width:"35px", height:"35px", marginLeft:"880px"}} /><span className='py-1'>Register</span>
+        <FaUser  className='px-2 py-2 ' style={{width:"35px", height:"35px", marginLeft:"55%"}} /><span className='py-1'>Register</span>
 
         <FaArrowRightToBracket className='px-2 py-2 ms-2' style={{width:"35px", height:"35px"}}/><span className='py-1'>Login</span>
 
@@ -63,42 +63,41 @@ function Header() {
         </div>
         {/* ------------------------------------------------------------------------ */}
         {/* ----------------------Navrbar Start--------------------------------------------- */}
-        <div>
-        <Navbar expand="lg" className=" bg-transparent position-fixed w-100 z-index-10" style={{backdropFilter:"blur(1px)", py:'4'}}>
+        <div className=''>
+         <Navbar expand="lg" className=" bg-transparent position-absolute w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5 " style={{backdropFilter:"blur(1px)", py:'4'}}>
       <Container fluid>
      <h1 className='ps-2 text-light'> <IoLocationSharp />Travela</h1>
-        {/* <Navbar.Brand href=" #"><h1></h1></Navbar.Brand> */}
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle aria-controls="navbarScroll" className="custom-toggle"/>
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className=" navbar-light me-auto my-2 my-lg-0 "
-            style={{ maxHeight: '100px' }}
+            style={{ maxHeight: '100px', height:"100px" }}
             navbarScroll
           >
-            <div className='blue py-3 px-3' style={{marginTop:"-3px", backgroundColor:""}} >
-                <Nav.Link href="/" className='fw-bold  py-4 text-light' >Home</Nav.Link>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
 
-            </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
+<Nav.Link href="/About" className='fw-bold py-4 text-light llink'>Home</Nav.Link>
+</div>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
 
-            <Nav.Link href="/About" className='fw-bold py-4 text-light'>About</Nav.Link>
+            <Nav.Link href="/About" className='fw-bold py-4 text-light llink'>About</Nav.Link>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
 
             <Nav.Link href="/Services" className='fw-bold py-4 text-light'>Services</Nav.Link>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
 
             <Nav.Link href="Packages" className='fw-bold py-4 text-light'>Packages</Nav.Link>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
 
             <Nav.Link href="Blog" className='fw-bold py-4 text-light'>Blog</Nav.Link>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
 
-            <NavDropdown title={<span className='text-light '>pages</span> } className='fw-bold py-3' id="navbarScrollingDropdown" style={{position:"relative"}} >
-             <div style={{position:"absolute", top:"50px"}}>
+            <NavDropdown title={<span className='text-light '>Pages</span> } className='fw-bold py-3' id="navbarScrollingDropdown">
+             <div style={{}}>
                  <NavDropdown.Item href="/Destination">Destination</NavDropdown.Item>
               <NavDropdown.Item href="/Exploretour">
                 Explore Tour
@@ -119,7 +118,7 @@ function Header() {
              </div>
             </NavDropdown>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-3px"}}>
+            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
 
             <Nav.Link href="Contact" className='fw-bold py-4 text-light'>Contact</Nav.Link>
             </div>
@@ -131,7 +130,7 @@ function Header() {
                    
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar> 
         </div>
     </div>
   )
