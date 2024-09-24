@@ -61,7 +61,7 @@ function Home() {
         />
         <Carousel.Caption className='text-light' >
         <h3 className='fw-bold mb-4 h33'>EXPLORER THE WORLD</h3>
-        <h1 className='h11 mb-5'>You Like To Go?</h1>
+        <h1 className='h11 mb-5 fs-sm-10'>You Like To Go?</h1>
           <h5 className='h55'>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
 </h5>

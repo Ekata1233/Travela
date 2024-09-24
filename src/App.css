@@ -192,21 +192,25 @@ z-index: 200;
   margin-left: 870px;
 }
 
-@media (max-width:425px){
+@media (min-width:375px) and (max-width:400px){
 
-  .cimg{
-   height: 970px;
-  }
-  body .h11 {
-    font-size: 50px ;
-  }
-  .h55{
-    font-size: 15px;
-  }
-  .h33{
-    font-size: 10px;
-    margin-top: -70px;
-  }
+  
+    .cimg {
+      height: 890px !important;
+      width: 100% !important;
+    }
+  
+    /* Adjusting main title font size */
+    .h11 {
+      font-size: 40px !important; /* Ensure the font size changes */
+    }
+    .search{
+      bottom: 45%;
+    }
+    .h55{
+      font-size: 10px;
+    }
+    
   
   } 
 
@@ -220,7 +224,7 @@ z-index: 200;
  height: 800px;
 }
 .h11{
-  font-size: 35px;
+  font-size: 60px;
 }
 .h55{
 }
@@ -258,6 +262,7 @@ font-size: 60px;
   }
   .h11{
     font-size: 48px;
+    
   }
   .cimg{
     height: 750px;

@@ -66,7 +66,7 @@ function Header() {
         <div className=''>
          <Navbar expand="lg" className=" bg-transparent position-fixed w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5 " style={{backdropFilter:"blur(1px)", py:'4'}}>
       <Container fluid>
-     <h1 className='ps-4 text-light ms-2'> <IoLocationSharp />Travela</h1>
+     <h1 className=' tra ps-4 text-light ms-2 '> <IoLocationSharp />Travela</h1>
         <Navbar.Toggle aria-controls="navbarScroll" className="custom-toggle"/>
         <Navbar.Collapse id="navbarScroll">
           <Nav
