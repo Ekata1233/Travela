@@ -12,7 +12,6 @@
 }
 html,body{
   height: 100%;
-  overflow-x: hidden;
 }
 .blue.container-fluid{
   position: fixed;
@@ -51,9 +50,9 @@ html,body{
 }
 .navbar{
   width: 100%;
-margin-top: 65px;
+/* margin-top: 65px;
 position: sticky;
-top: 0;
+top: 0; */
 
  
   z-index: 10;
@@ -113,8 +112,8 @@ top: 0;
 
 .search{
 left: 12%;
-top: 90%;
-  z-index: 200;
+bottom: -28%;
+z-index: 200;
   background-color: #13367be3;
 }
 .carousel-control-next .carousel-control-next-icon {
@@ -189,11 +188,33 @@ top: 90%;
   color: white;
 }
 
+.register{
+  margin-left: 870px;
+}
+
+@media (max-width:425px){
+
+  .cimg{
+   height: 970px;
+  }
+  body .h11 {
+    font-size: 50px ;
+  }
+  .h55{
+    font-size: 15px;
+  }
+  .h33{
+    font-size: 10px;
+    margin-top: -70px;
+  }
+  
+  } 
 
 
-
-
-@media (max-width:768px){
+   @media (max-width:768px){
+    .search{
+      bottom: -35%;
+    }
 
 .cimg{
  height: 800px;
@@ -221,31 +242,39 @@ font-size: 60px;
 }
 #pages{
   color: #13357B;
-  /* font-size: 30px; */
 }
 .blue1:hover{
   background-color:white;
   color: white;
 }
 
-}
-@media (max-width:567px){
-
-  .cimg{
-   height: 670px;
+} 
+ @media (min-width:769px) and (max-width:1024px){
+  .register{
+    margin-left:370px;
+  }
+  .search{
+    bottom: -27%;
   }
   .h11{
-    font-size: 27px;
-   
+    font-size: 48px;
   }
-  .h55{
-    font-size: 15px;
-  }
-  .h33{
-    font-size: 15px;
-    margin-top: -50px;
-  }
+  .cimg{
+    height: 750px;
+   }
   
+ 
+}
+@media (min-width:1025px) and (max-width:1440px) {
+  .register {
+    margin-left: 770px;
   }
+  .search{
+    bottom: 5%;
+  }
+}
+
+
+
 
 

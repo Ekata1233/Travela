@@ -11,6 +11,7 @@ import Services from './assets/components/Services';
 import Blog from './assets/components/Blog';
 import Contact from './assets/components/Contact';
 import Packages from './assets/components/Packages';
+import Aboutus from './assets/components/Aboutus';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,7 +36,7 @@ function App() {
       </Routes>
       
       </BrowserRouter>
-
+     
     </>
   )
 }

@@ -3,13 +3,17 @@ import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import Aboutus from './Aboutus';
+import Blog from './Blog';
+import Services from './Services';
 
 
 
 function Home() {
   return (
-    <div  style={{ maxHeight: '100vh', overflow: 'hidden' }}>
-        <div className=''>  
+    <div >
+      <div className=' 'style={{ overflow:"hidden"}}>
+        <div className='' >  
         <Carousel data-bs-theme="dark" className='' >
             
       <Carousel.Item >
@@ -83,6 +87,11 @@ function Home() {
         </Button>
       </InputGroup>
         </div>
+        
+        </div>
+        <Aboutus/>
+        <Blog/>
+        <Services/>
     </div>
   )
 }

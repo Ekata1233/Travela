@@ -21,7 +21,7 @@ function Header() {
         
         <div className=' blue container-fluid px-4 py-2 text-center d-none d-lg-block ' >
         <span className='d-flex text-light'>
-        <div className='ps-4'>
+         <div className='ps-4 icon'>
             <FaTwitter className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px"}}/>
 
             <FaFacebookF className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px"}}/>
@@ -31,10 +31,10 @@ function Header() {
             <FaInstagram className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px"}}/>
 
             <FaYoutube className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px",}}/>
-        </div>
+        </div> 
 
         {/* ------------------------------------------------------------------ */}
-        <FaUser  className='px-2 py-2 ' style={{width:"35px", height:"35px", marginLeft:"55%"}} /><span className='py-1'>Register</span>
+        <FaUser  className='register px-2 py-2 ' style={{width:"35px", height:"35px"}} /><span className='py-1'>Register</span>
 
         <FaArrowRightToBracket className='px-2 py-2 ms-2' style={{width:"35px", height:"35px"}}/><span className='py-1'>Login</span>
 
@@ -74,27 +74,27 @@ function Header() {
             style={{ maxHeight: '100px', height:"100px" }}
             navbarScroll
           >
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
+            <div className=' blue1  py-3 px-2' style={{marginTop:"-1px"}}>
 
-<Nav.Link href="/About" className='fw-bold py-4 text-light llink'>Home</Nav.Link>
+<Nav.Link href="/" className='fw-bold py-4 text-light llink' id='hom'>Home</Nav.Link>
 </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
+            <div className=' blue1  py-3 px-2' style={{marginTop:"-1px"}}>
 
             <Nav.Link href="/About" className='fw-bold py-4 text-light llink'>About</Nav.Link>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
+            <div className=' blue1  py-3 px-2' style={{marginTop:"-1px"}}>
 
             <Nav.Link href="/Services" className='fw-bold py-4 text-light'>Services</Nav.Link>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
+            <div className=' blue1  py-3 px-2' style={{marginTop:"-1px"}}>
 
             <Nav.Link href="Packages" className='fw-bold py-4 text-light'>Packages</Nav.Link>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
+            <div className=' blue1  py-3 px-2' style={{marginTop:"-1px"}}>
 
             <Nav.Link href="Blog" className='fw-bold py-4 text-light'>Blog</Nav.Link>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
+            <div className=' blue1  py-3 px-2' style={{marginTop:"-1px"}}>
 
             <NavDropdown title={<span className=' ' id='pages'>Pages</span> } className='fw-bold py-3' id="navbarScrollingDropdown">
              <div style={{}}>
@@ -118,7 +118,7 @@ function Header() {
              </div>
             </NavDropdown>
             </div>
-            <div className=' blue1  py-3 px-3' style={{marginTop:"-1px"}}>
+            <div className=' blue1  py-3 px-2' style={{marginTop:"-1px"}}>
 
             <Nav.Link href="Contact" className='fw-bold py-4 text-light'>Contact</Nav.Link>
             </div>
