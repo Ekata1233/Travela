@@ -15,12 +15,62 @@ html,body{
 }
 .blue.container-fluid{
   position: fixed;
-  z-index: 11;
+  z-index: 999;
 }
 .navbar-light{
  position: absolute;
  right: 0%; 
 
+}
+.navbar.scrolled {
+  background-color: white !important;
+  color: #13357B;
+}
+.navbar.scrolled .blue1:hover .nav-link{
+  /* background-color: rgb(220, 25, 25) !important; */
+  color:white !important;
+}
+
+.navbar.scrolled .nav-link, 
+.navbar.scrolled #pages, 
+.navbar.scrolled h1 {
+  color: #13357B !important;
+}
+
+.navbar.scrolled .btn {
+  color: white !important;
+  background-color: #13357B !important;
+  border-color: #13357B !important;
+}
+
+.navbar.scrolled .custom-navbar {
+  transition: color 0.3s ease;
+}
+
+/* Custom toggle button color when scrolled */
+.navbar.scrolled .custom-toggle {
+  border-color: #13357B !important; /* Change border color */
+}
+
+.navbar.scrolled .custom-toggle .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28133, 53, 123, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* Change icon color */
+}
+.dropdown-toggle::after {
+  display: none !important; /* This hides the default caret */
+}
+.custom-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px; /* Spacing between text and caret */
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white; /* Default color */
+}
+
+/* Change dropdown caret color when the navbar is scrolled */
+.navbar.scrolled .custom-caret {
+  border-top-color: #13357B !important; /* Change caret color to #13357B when scrolled */
 }
 .blue1{
   font-family: 'Roboto', sans-serif;
@@ -38,14 +88,14 @@ html,body{
   content: "";
   width: 100%;
   height: 0;
-  bottom: -1px;
+  bottom: 13px;
   left: 0;
-  background: var(--bs-primary);
+  background:#13357B;
   transition: .5s;
   z-index: -203;
 }
 .blue1:hover::before{
-  height: 100px;
+  height: 78px;
   background-color: #13357B;
 }
 .navbar{
@@ -55,7 +105,7 @@ position: sticky;
 top: 0; */
 
  
-  z-index: 10;
+  z-index: 1000;
 
 
   
@@ -191,8 +241,68 @@ z-index: 200;
 .register{
   margin-left: 870px;
 }
+.welcome{
+  /* background-image: url("/public/about-img-1.png"); */
+}
+.colorBlue{
+  color: #13357B;
+}
+.para{
+  height: 305px;
+  position: relative;
+}
 
-@media (min-width:375px) and (max-width:400px){
+.para::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 95%;
+   top: 95px;
+   right: 0;
+   background-color: #13357B;
+   transform: skewY(25deg);
+   z-index: -205;
+}
+.para1{
+  height: 301px;
+  position: relative;
+}
+.para::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 95%;
+   top: 95px;
+   left: 0;
+   background-color: #13357B;
+   transform: skewY(-25deg);
+   z-index: -205;
+}
+
+.serviceIcon{
+  font-size: 450%;
+ 
+}
+.justi{
+  text-align: justify;
+}
+.grey{
+  color: grey;
+
+}
+.services-div:hover{
+  background-color: #13357B;
+  color: white;
+}
+.services-div:hover .serviceIcon {
+  color: white;
+}
+.services-div:hover .grey{
+  color: white;
+}
+
+
+@media  (max-width:426px){
 
   
     .cimg {
@@ -204,13 +314,48 @@ z-index: 200;
     .h11 {
       font-size: 40px !important; /* Ensure the font size changes */
     }
+
     .search{
-      bottom: 45%;
+      bottom: -49% !important;
     }
     .h55{
       font-size: 10px;
     }
-    
+    .para::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 49% !important;
+       top: 65px !important;
+       right: 0;
+       background-color: #13357B;
+       transform: skewY(25deg);
+       z-index: -205;
+    }
+   
+    .para::before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 49% !important;
+       top: 65px !important;
+       left: 0;
+       background-color: #13357B;
+       transform: skewY(-25deg);
+       z-index: -205;
+    }
+    .aboutus{
+      padding-top: 30px !important;
+    }
+    .arrow{
+      margin-right: 170px;
+    }
+    .gery{
+     word-spacing: -10px;
+    }
+    .serviceIcon{
+      margin-top: 70px !important;
+    }
   
   } 
 
@@ -251,6 +396,35 @@ font-size: 60px;
   background-color:white;
   color: white;
 }
+.para{
+  height: 405px;
+}
+.para::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+   top: 135px;
+   right: 0;
+   background-color: #13357B;
+   transform: skewY(25deg);
+   z-index: -205;
+}
+
+.para::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+   top: 135px;
+   left: 0;
+   background-color: #13357B;
+   transform: skewY(-25deg);
+   z-index: -205;
+}
+.aboutus{
+  padding-top: 350px;
+}
 
 } 
  @media (min-width:769px) and (max-width:1024px){
@@ -267,7 +441,40 @@ font-size: 60px;
   .cimg{
     height: 750px;
    }
-  
+   .para::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 60%;
+     top: 60px;
+     right: 0;
+     background-color: #13357B;
+     transform: skewY(25deg);
+     z-index: -205;
+  }
+ 
+  .para::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 60%;
+     top: 60px;
+     left: 0;
+     background-color: #13357B;
+     transform: skewY(-25deg);
+     z-index: -205;
+  }
+  .para{
+    margin-top: 35%;
+  }
+  .serviceIcon{
+    margin-top:30px;
+  }
+  .grey{
+    font-size: 15px;
+    letter-spacing: 0px;
+    
+  }
  
 }
 @media (min-width:1025px) and (max-width:1440px) {

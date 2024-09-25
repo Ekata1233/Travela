@@ -6,6 +6,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Aboutus from './Aboutus';
 import Blog from './Blog';
 import Services from './Services';
+import Ourserivices from './Ourserivices';
 
 
 
@@ -90,6 +91,7 @@ function Home() {
         
         </div>
         <Aboutus/>
+        <Ourserivices/>
         <Blog/>
         <Services/>
     </div>

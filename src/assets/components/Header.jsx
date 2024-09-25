@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -16,6 +16,22 @@ import Navbar from 'react-bootstrap/Navbar';
 import { IoLocationSharp } from "react-icons/io5";
 
 function Header() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div>
         
@@ -96,7 +112,7 @@ function Header() {
             </div>
             <div className=' blue1  py-3 px-2' style={{marginTop:"-1px"}}>
 
-            <NavDropdown title={<span className=' ' id='pages'>Pages</span> } className='fw-bold py-3' id="navbarScrollingDropdown">
+            <NavDropdown title={<span className=' ' id='pages'>Pages<span className='custom-caret'></span></span> } className='fw-bold py-3' id="navbarScrollingDropdown">
              <div style={{}}>
                  <NavDropdown.Item href="/Destination">Destination</NavDropdown.Item>
               <NavDropdown.Item href="/Exploretour">
