@@ -7,6 +7,7 @@ import Aboutus from './Aboutus';
 import Blog from './Blog';
 import Services from './Services';
 import Ourserivices from './Ourserivices';
+import Populardesti from './Populardesti';
 
 
 
@@ -92,6 +93,7 @@ function Home() {
         </div>
         <Aboutus/>
         <Ourserivices/>
+        <Populardesti/>
         <Blog/>
         <Services/>
     </div>
