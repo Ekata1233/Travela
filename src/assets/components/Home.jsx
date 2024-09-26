@@ -8,6 +8,8 @@ import Blog from './Blog';
 import Services from './Services';
 import Ourserivices from './Ourserivices';
 import Populardesti from './Populardesti';
+import TheWorld from './TheWorld';
+import AwesomePack from './AwesomePack';
 
 
 
@@ -94,6 +96,8 @@ function Home() {
         <Aboutus/>
         <Ourserivices/>
         <Populardesti/>
+        <TheWorld/>
+        <AwesomePack/>
         <Blog/>
         <Services/>
     </div>
