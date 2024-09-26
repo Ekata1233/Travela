@@ -310,6 +310,12 @@ z-index: 200;
   background-color: #13357b !important;
   color: white !important;
 }
+.dest-img{
+  height: 600px !important;
+}
+.btns{
+  display: inline-flex;
+}
 @media  (max-width:426px){
 
   
@@ -482,6 +488,9 @@ font-size: 60px;
     font-size: 15px;
     letter-spacing: 0px;
     
+  }
+  .dest-img{
+    height: 430px !important;
   }
  
 }

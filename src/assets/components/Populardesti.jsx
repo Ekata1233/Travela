@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 function Populardesti() {
@@ -14,10 +16,10 @@ function Populardesti() {
         <Container>
         <h4 className='colorBlue text-center pt-5 pb-2'>----- SERVICES -----</h4>
         <h1 className='text-center'>Our Services</h1>
-        <div className='d-flex justify-content-between py-5'>
+        <div className='d-flex justify-content-center py-5 d-inline-flex flex-wrap '>
         <Button
         variant=""
-        className={`destiBtn rounded-pill py-2 ${activeButton === 'All' ? 'active-btn' : ''}`}
+        className={`destiBtn rounded-pill py-2 m-3${activeButton === 'All' ? 'active-btn' : ''}`}
         onClick={() => handleButtonClick('All')}
       >
         All
@@ -25,7 +27,7 @@ function Populardesti() {
 
       <Button
         variant=""
-        className={`destiBtn rounded-pill py-2 ${activeButton === 'USA' ? 'active-btn' : ''}`}
+        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'USA' ? 'active-btn' : ''}`}
         onClick={() => handleButtonClick('USA')}
       >
         USA
@@ -33,7 +35,7 @@ function Populardesti() {
 
       <Button
         variant=""
-        className={`destiBtn rounded-pill py-2 ${activeButton === 'Canada' ? 'active-btn' : ''}`}
+        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'Canada' ? 'active-btn' : ''}`}
         onClick={() => handleButtonClick('Canada')}
       >
         Canada
@@ -41,7 +43,7 @@ function Populardesti() {
 
       <Button
         variant=""
-        className={`destiBtn rounded-pill py-2 ${activeButton === 'Europe' ? 'active-btn' : ''}`}
+        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'Europe' ? 'active-btn' : ''}`}
         onClick={() => handleButtonClick('Europe')}
       >
         Europe
@@ -49,7 +51,7 @@ function Populardesti() {
 
       <Button
         variant=""
-        className={`destiBtn rounded-pill py-2 ${activeButton === 'China' ? 'active-btn' : ''}`}
+        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'China' ? 'active-btn' : ''}`}
         onClick={() => handleButtonClick('China')}
       >
         China
@@ -57,13 +59,48 @@ function Populardesti() {
 
       <Button
         variant=""
-        className={`destiBtn rounded-pill py-2 ${activeButton === 'Singapore' ? 'active-btn' : ''}`}
+        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'Singapore' ? 'active-btn' : ''}`}
         onClick={() => handleButtonClick('Singapore')}
       >
         Singapore
       </Button>
             </div>
+            <Row>
+              <Col lg="4">
+                
+                    <div className='mt-2'>
+                        <img  src="/destination-1.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    </div>
+                    <div className='mt-2'>
+                        <img  src="/destination-7.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    </div>
+                    <div className='mt-2'>
+                        <img  src="/destination-4.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    </div>
+                  
+              </Col>
+              <Col lg="4">
+              <div className='mt-2'>
+                        <img  src="/destination-2.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    </div>
+                    <div className='mt-2'>
+                        <img  src="/destination-8.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    </div>
+                    <div className='mt-2'>
+                        <img  src="/destination-5.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    </div>
+              </Col>
+              <Col lg="4">
+                    <div className='mt-2'>
+                        <img  src="/destination-9.jpg"  className="p-2 rounded rounded-4 w-100 dest-img"/>
+                    </div>
+                    <div className='mt-2'>
+                        <img  src="/destination-6.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    </div>
+              </Col>
+            </Row>
         </Container>
+
     </div>
   )
 }
