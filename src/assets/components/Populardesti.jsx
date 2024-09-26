@@ -68,34 +68,34 @@ function Populardesti() {
             <Row>
               <Col lg="4">
                 
-                    <div className='mt-2'>
-                        <img  src="/destination-1.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    <div className='mt-2 div-popimg'>
+                        <img  src="/destination-1.jpg"  className="  w-100"/>
                     </div>
-                    <div className='mt-2'>
-                        <img  src="/destination-7.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    <div className='mt-2 div-popimg'>
+                        <img  src="/destination-7.jpg"  className= "w-100"/>
                     </div>
-                    <div className='mt-2'>
-                        <img  src="/destination-4.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    <div className='mt-2 div-popimg'>
+                        <img  src="/destination-4.jpg"  className=" w-100"/>
                     </div>
                   
               </Col>
               <Col lg="4">
-              <div className='mt-2'>
-                        <img  src="/destination-2.jpg"  className="p-2 rounded rounded-4 w-100"/>
+              <div className='mt-2 div-popimg'>
+                        <img  src="/destination-2.jpg"  className=" w-100"/>
                     </div>
-                    <div className='mt-2'>
-                        <img  src="/destination-8.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    <div className='mt-2 div-popimg'>
+                        <img  src="/destination-8.jpg"  className=" w-100"/>
                     </div>
-                    <div className='mt-2'>
-                        <img  src="/destination-5.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    <div className='mt-2 div-popimg'>
+                        <img  src="/destination-5.jpg"  className=" w-100"/>
                     </div>
               </Col>
               <Col lg="4">
-                    <div className='mt-2'>
-                        <img  src="/destination-9.jpg"  className="p-2 rounded rounded-4 w-100 dest-img"/>
+                    <div className='mt-2 div-popimg'>
+                        <img  src="/destination-9.jpg"  className=" w-100 dest-img"/>
                     </div>
-                    <div className='mt-2'>
-                        <img  src="/destination-6.jpg"  className="p-2 rounded rounded-4 w-100"/>
+                    <div className='mt-2 div-popimg'>
+                        <img  src="/destination-6.jpg"  className=" w-100"/>
                     </div>
               </Col>
             </Row>
