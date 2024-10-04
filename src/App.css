@@ -17,6 +17,10 @@ html,body{
   position: fixed;
   z-index: 999;
 }
+.header-icon:hover{
+  color: #13357B;
+  background-color: white;
+}
 .navbar-light{
  position: absolute;
  right: 0%; 
@@ -54,6 +58,9 @@ html,body{
 
 .navbar.scrolled .custom-toggle .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28133, 53, 123, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* Change icon color */
+}
+.border-bottom-custom {
+  border-bottom: 0.5px solid rgb(163, 163, 163); /* Adjust thickness if needed */
 }
 .dropdown-toggle::after {
   display: none !important; /* This hides the default caret */
@@ -425,6 +432,32 @@ z-index: 200;
 }
 .info a:hover{
   color:blue;
+}
+
+.explore{
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 27%;
+}
+
+.explore1{
+  color: black;
+  position: absolute;
+  top: 88%;
+  left: 7%;
+}
+.link {
+  position: absolute;
+  top: 35%; 
+  right: 50%; 
+  z-index: 10;
+  display: none;
+  color: white;
+  font-size: 30px;
+}
+.div-popimg:hover .link{
+  display: block;
 }
 @media  (max-width:426px){
 

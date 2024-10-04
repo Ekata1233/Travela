@@ -38,15 +38,15 @@ function Header() {
         <div className=' blue container-fluid px-4 py-2 text-center d-none d-lg-block ' >
         <span className='d-flex text-light'>
          <div className='ps-4 icon'>
-            <FaTwitter className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px"}}/>
+            <FaTwitter className='border border-1 rounded rounded-circle p-2  me-2 header-icon' style={{width:"35px", height:"35px"}}/>
 
-            <FaFacebookF className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px"}}/>
+            <FaFacebookF className='border border-1 rounded rounded-circle p-2 header-icon me-2' style={{width:"35px", height:"35px"}}/>
 
-            <FaLinkedinIn className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px"}}/>
+            <FaLinkedinIn className='border border-1 rounded rounded-circle p-2 header-icon me-2' style={{width:"35px", height:"35px"}}/>
 
-            <FaInstagram className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px"}}/>
+            <FaInstagram className='border border-1 rounded rounded-circle p-2 header-icon me-2' style={{width:"35px", height:"35px"}}/>
 
-            <FaYoutube className='border border-1 rounded rounded-circle p-2 text-light me-2' style={{width:"35px", height:"35px",}}/>
+            <FaYoutube className='border border-1 rounded rounded-circle p-2 header-icon me-2' style={{width:"35px", height:"35px",}}/>
         </div> 
 
         {/* ------------------------------------------------------------------ */}
@@ -80,7 +80,7 @@ function Header() {
         {/* ------------------------------------------------------------------------ */}
         {/* ----------------------Navrbar Start--------------------------------------------- */}
         <div className=''>
-         <Navbar expand="lg" className=" bg-transparent position-fixed w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5 " style={{backdropFilter:"blur(1px)", py:'4'}}>
+         <Navbar expand="lg" className=" bg-transparent position-fixed w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5 border-bottom-custom" style={{backdropFilter:"blur(1px)", py:'4'}}>
       <Container fluid>
      <h1 className=' tra ps-4 text-light ms-2 '> <IoLocationSharp />Travela</h1>
         <Navbar.Toggle aria-controls="navbarScroll" className="custom-toggle"/>
