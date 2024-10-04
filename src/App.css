@@ -459,6 +459,42 @@ z-index: 200;
 .div-popimg:hover .link{
   display: block;
 }
+.touri-img{
+  border-radius: 16px;
+  width: 100%;      /* Ensure image takes the full width of its container */
+  height: auto;     /* Maintain aspect ratio */
+  object-fit: cover;
+  object-fit: cover;
+  transition: transform 0.8s;
+ 
+}
+.div-touriimg{
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 7px;  
+
+  background-color: #13357B;
+  position: relative;
+}
+.div-touriimg:hover img{
+  transform: scale(1.5);
+ 
+}
+.div-touriimg .opaci {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #13357b;;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+.div-touriimg:hover .opaci {
+  opacity: 0.8; /* Show the overlay on hover */
+}
+
 @media  (max-width:426px){
 
   
@@ -581,6 +617,9 @@ font-size: 60px;
 }
 .aboutus{
   padding-top: 350px;
+}
+.touri-img1{
+  height: 40px;
 }
 
 } 

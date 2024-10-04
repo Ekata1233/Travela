@@ -1,27 +1,25 @@
-import React, { useState } from "react";
-import { Container } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { FaRegPlusSquare } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
-function Populardesti() {
-  const [activeButton, setActiveButton] = useState("");
+import React, { useState } from 'react'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import { Container } from 'react-bootstrap';
 
-  const handleButtonClick = (destination) => {
-    setActiveButton(destination);
-  };
+function Tourism() {
+    const [activeButton, setActiveButton] = useState("");
+
+    const handleButtonClick = (destination) => {
+      setActiveButton(destination);
+    };
   return (
     <div>
-      <Container>
-        <h4 className="colorBlue text-center pt-5 pb-2">
-          ----- Destination -----
-        </h4>
-        <h1 className="text-center">Popular Destination</h1>
-        <div className="d-flex justify-content-center py-5 d-inline-flex flex-wrap ">
-          <Button
+        
+                <h4 className='colorBlue pt-5 pb-2 text-center'>----- EXPLORE TOUR -----</h4>
+                <h1 className='text-center'>The World</h1>
+                <p className='colorGray text-center w-75 py-4 m-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat.</p>
+        <div className="d-flex justify-content-center py-5  flex-wrap  ">
+        <Button
             variant=""
-            className={`destiBtn rounded-pill py-2 m-3${
+            className={`destiBtn rounded-pill py-2 m-3 ${
               activeButton === "All" ? "active-btn" : ""
             }`}
             onClick={() => handleButtonClick("All")}
@@ -39,15 +37,7 @@ function Populardesti() {
             USA
           </Button>
 
-          <Button
-            variant=""
-            className={`destiBtn rounded-pill py-2 m-3 ${
-              activeButton === "Canada" ? "active-btn" : ""
-            }`}
-            onClick={() => handleButtonClick("Canada")}
-          >
-            Canada
-          </Button>
+          
 
           <Button
             variant=""
@@ -79,16 +69,20 @@ function Populardesti() {
             Singapore
           </Button>
         </div>
-        <Row>
-          <Col lg="4">
-            <div className="mt-2 div-popimg">
-              <img src="/destination-1.jpg" className="  w-100" />
-              <div className=" p-5 opaci"></div>
+
+        
+           
+        <Container fluid className="d-flex flex-wrap justify-content-center">
+          <Row lg="12" className='px-2'>
+            {/* Column 1 */}
+            <Col lg="2"  md="6" className="p-1">
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-1.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
               </div>
               <div className="info ps-5">
                 <Button
@@ -100,18 +94,17 @@ function Populardesti() {
                 </Button>
                 <h5>New York City</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City <FaArrowRight />
+                  View All City 
                 </a>{" "}
               </div>
             </div>
-            <div className="mt-2 div-popimg">
-              <img src="/destination-7.jpg" className="w-100" />
-              <div className=" p-5 opaci"></div>
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-6.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
               </div>
               <div className="info ps-5">
                 <Button
@@ -121,20 +114,24 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Los angelas</h5>
+                <h5>New York City</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City <FaArrowRight />
+                  View All City 
                 </a>{" "}
               </div>
             </div>
-            <div className="mt-2 div-popimg">
-              <img src="/destination-4.jpg" className=" w-100" />
-              <div className=" p-5 opaci"></div>
+
+            </Col>
+            
+            {/* Column 2 */}
+            <Col lg="3" md="6" className="p-1">
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-2.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
               </div>
               <div className="info ps-5">
                 <Button
@@ -144,26 +141,19 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Los angelas</h5>
+                <h5>New York City</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City <FaArrowRight />
+                  View All City 
                 </a>{" "}
               </div>
             </div>
-          </Col>
-          <Col lg="4">
-            <div className="mt-2 div-popimg">
-              <img
-                src="/destination-2.jpg"
-                className="w-100"
-                alt="Destination"
-              />
-              <div className=" p-5 opaci"></div>
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-7.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
               </div>
               <div className="info ps-5">
                 <Button
@@ -173,20 +163,23 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Las vegas</h5>
+                <h5>New York City</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City <FaArrowRight />
+                  View All City 
                 </a>{" "}
               </div>
             </div>
-            <div className="mt-2 div-popimg">
-              <img src="/destination-8.jpg" className=" w-100" />
-              <div className=" p-5 opaci"></div>
+
+            </Col>
+            {/* Column 3 */}
+            <Col lg="2" md="6" className="p-1">
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-3.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
               </div>
               <div className="info ps-5">
                 <Button
@@ -196,20 +189,19 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Los angelas</h5>
+                <h5>New York City</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City <FaArrowRight />
+                  View All City 
                 </a>{" "}
               </div>
             </div>
-            <div className="mt-2 div-popimg">
-              <img src="/destination-5.jpg" className=" w-100" />
-              <div className=" p-5 opaci"></div>
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-8.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
               </div>
               <div className="info ps-5">
                 <Button
@@ -219,22 +211,23 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Los angelas</h5>
+                <h5>New York City</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City <FaArrowRight />
+                  View All City 
                 </a>{" "}
               </div>
             </div>
-          </Col>
-          <Col lg="4">
-            <div className="mt-2 div-popimg">
-              <img src="/destination-9.jpg" className=" w-100 dest-img" />
-              <div className=" p-5 opaci"></div>
+
+            </Col>
+            {/* Column 4 */}
+            <Col lg="3" md="6" className="p-1">
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-4.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
               </div>
               <div className="info ps-5">
                 <Button
@@ -244,20 +237,19 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>San francisco</h5>
+                <h5>New York City</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City <FaArrowRight />
+                  View All City 
                 </a>{" "}
               </div>
             </div>
-            <div className="mt-2 div-popimg">
-              <img src="/destination-6.jpg" className=" w-100" />
-              <div className=" p-5 opaci"></div>
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-9.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
               </div>
               <div className="info ps-5">
                 <Button
@@ -267,17 +259,71 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Los angelas</h5>
+                <h5>New York City</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City <FaArrowRight />
+                  View All City 
                 </a>{" "}
               </div>
             </div>
-          </Col>
-        </Row>
-      </Container>
+
+            </Col>
+            {/* Column 5 */}
+            <Col lg="2" className="p-1">
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-4.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
+              <div
+                className="plus rounded rounded-circle text-center mt-4 me-4"
+                id="i"
+              >
+              </div>
+              <div className="info ps-5">
+                <Button
+                  variant="outline-primary"
+                  id="discovernow"
+                  className="rounded-pill fw-bold border border-light mb-2"
+                >
+                  20 Photos
+                </Button>
+                <h5>New York City</h5>
+                <a href="#" className="text-decoration-none ">
+                  View All City 
+                </a>{" "}
+              </div>
+            </div>
+            <div className=" div-touriimg h-50">
+            <img src='/gallery-9.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <div className=" p-5 opaci"></div>
+              <div
+                className="plus rounded rounded-circle text-center mt-4 me-4"
+                id="i"
+              >
+              </div>
+              <div className="info ps-5">
+                <Button
+                  variant="outline-primary"
+                  id="discovernow"
+                  className="rounded-pill fw-bold border border-light mb-2"
+                >
+                  20 Photos
+                </Button>
+                <h5>New York City</h5>
+                <a href="#" className="text-decoration-none ">
+                  View All City 
+                </a>{" "}
+              </div>
+            </div>
+               
+
+            </Col>
+          </Row>
+        </Container>
+           
+        
+                
+            
     </div>
-  );
+  )
 }
 
-export default Populardesti;
+export default Tourism

@@ -10,6 +10,7 @@ import Ourserivices from './Ourserivices';
 import Populardesti from './Populardesti';
 import TheWorld from './TheWorld';
 import AwesomePack from './AwesomePack';
+import Tourism from './Tourism';
 
 
 
@@ -97,7 +98,9 @@ function Home() {
         <Ourserivices/>
         <Populardesti/>
         <TheWorld/>
+        
         <AwesomePack/>
+        <Tourism/>
         <Blog/>
         <Services/>
     </div>
