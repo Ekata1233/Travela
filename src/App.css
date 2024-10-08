@@ -723,7 +723,6 @@ z-index: 200;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Ensure text inside the card body is white */
 .center-background .p-3 {
   color: white !important;
 }
