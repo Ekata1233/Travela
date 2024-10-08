@@ -14,6 +14,8 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { IoLocationSharp } from "react-icons/io5";
+import ScrollToTop from 'react-scroll-to-top';
+
 
 function Header() {
   useEffect(() => {
@@ -148,6 +150,17 @@ function Header() {
       </Container>
     </Navbar> 
         </div>
+        <ScrollToTop Smooth top="1000"  color= "white" className='rounded rounded-pill' 
+            style={{
+              backgroundColor: "#13357B", 
+              
+              padding: "10px 5px 15px 5px",  
+              fontWeight: "bold", 
+              fontSize: "10px",   
+            }}
+>
+          &#8679; 
+        </ScrollToTop>
     </div>
   )
 }

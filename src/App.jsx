@@ -12,6 +12,7 @@ import Blog from './assets/components/Blog';
 import Contact from './assets/components/Contact';
 import Packages from './assets/components/Packages';
 import Aboutus from './assets/components/Aboutus';
+import Footer from './Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,6 +35,7 @@ function App() {
 
 
       </Routes>
+      <Footer/>
       
       </BrowserRouter>
      

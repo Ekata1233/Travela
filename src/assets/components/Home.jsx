@@ -11,12 +11,17 @@ import Populardesti from './Populardesti';
 import TheWorld from './TheWorld';
 import AwesomePack from './AwesomePack';
 import Tourism from './Tourism';
-
+import OnlineBooking from './OnlineBooking';
+import PopularBlog from './PopularBlog';
+import MeetGuide from './MeetGuid';
+import Testimonial from './Testimonial';
 
 
 function Home() {
   return (
     <div >
+          <a id="button" class="bi bi-chevron-up fs-3 text-light fw-bolder"></a>
+ 
       <div className=' 'style={{ overflow:"hidden"}}>
         <div className='' >  
         <Carousel data-bs-theme="dark" className='' >
@@ -101,8 +106,13 @@ function Home() {
         
         <AwesomePack/>
         <Tourism/>
+        <OnlineBooking/>
+        <MeetGuide/>
+        <PopularBlog/>
+        <Testimonial/>
         <Blog/>
         <Services/>
+
     </div>
   )
 }

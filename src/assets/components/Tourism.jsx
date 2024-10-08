@@ -3,6 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Container } from 'react-bootstrap';
+import { FaArrowRight } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
 
 function Tourism() {
     const [activeButton, setActiveButton] = useState("");
@@ -11,10 +13,10 @@ function Tourism() {
       setActiveButton(destination);
     };
   return (
-    <div>
+    <div className='' style={{marginTop:"120px"}}>
         
-                <h4 className='colorBlue pt-5 pb-2 text-center'>----- EXPLORE TOUR -----</h4>
-                <h1 className='text-center'>The World</h1>
+                <h4 className='colorBlue pt-5 pb-2 text-center'>----- Our Gallery -----</h4>
+                <h1 className='text-center'>Tourism & Travelling Gallery</h1>
                 <p className='colorGray text-center w-75 py-4 m-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat.</p>
         <div className="d-flex justify-content-center py-5  flex-wrap  ">
         <Button
@@ -34,7 +36,7 @@ function Tourism() {
             }`}
             onClick={() => handleButtonClick("USA")}
           >
-            USA
+           World Tour
           </Button>
 
           
@@ -46,7 +48,7 @@ function Tourism() {
             }`}
             onClick={() => handleButtonClick("Europe")}
           >
-            Europe
+           Ocean Tour
           </Button>
 
           <Button
@@ -56,7 +58,7 @@ function Tourism() {
             }`}
             onClick={() => handleButtonClick("China")}
           >
-            China
+           Summer Tour
           </Button>
 
           <Button
@@ -66,7 +68,7 @@ function Tourism() {
             }`}
             onClick={() => handleButtonClick("Singapore")}
           >
-            Singapore
+           Sport Tour
           </Button>
         </div>
 
@@ -79,22 +81,18 @@ function Tourism() {
             <div className=" div-touriimg h-50">
             <img src='/gallery-1.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
             <div className=" p-5 opaci"></div>
+            
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
               </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
@@ -106,17 +104,13 @@ function Tourism() {
                 id="i"
               >
               </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
@@ -133,17 +127,13 @@ function Tourism() {
                 id="i"
               >
               </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
@@ -154,18 +144,13 @@ function Tourism() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-              </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              </div>              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
@@ -180,18 +165,13 @@ function Tourism() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-              </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              </div>              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
@@ -202,18 +182,13 @@ function Tourism() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-              </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              </div>              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
@@ -228,18 +203,13 @@ function Tourism() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-              </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              </div>              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
@@ -250,18 +220,13 @@ function Tourism() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-              </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              </div>              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
@@ -270,46 +235,36 @@ function Tourism() {
             {/* Column 5 */}
             <Col lg="2" className="p-1">
             <div className=" div-touriimg h-50">
-            <img src='/gallery-4.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <img src='/gallery-5.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
             <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-              </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              </div>              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
             <div className=" div-touriimg h-50">
-            <img src='/gallery-9.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
+            <img src='/gallery-10.jpg' className="img-fluid touri-img h-100" alt="Gallery" />              
             <div className=" p-5 opaci"></div>
               <div
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-              </div>
-              <div className="info ps-5">
-                <Button
-                  variant="outline-primary"
-                  id="discovernow"
-                  className="rounded-pill fw-bold border border-light mb-2"
-                >
-                  20 Photos
-                </Button>
-                <h5>New York City</h5>
+              </div>              <div><FaPlus className='touri-plus mb-5'/></div>
+
+              <div className="info text-center">
+                
+                <h5>WORLD TOUR</h5>
                 <a href="#" className="text-decoration-none ">
-                  View All City 
+                  View All Place <FaArrowRight />
                 </a>{" "}
               </div>
             </div>
