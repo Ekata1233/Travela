@@ -10,7 +10,14 @@ import { RiMailOpenFill } from "react-icons/ri";
 
 function Contact() {
   return (
+    
     <div className='bg-body-tertiary '>
+      <div className="div-mainImg">
+        <div className="overlay">
+          <h1 className="mainFontSize fw-bold text-light">Contact us</h1>
+          <h5 className="params">Home / Pages / <span className="text-light">Contact</span> </h5>
+        </div>
+      </div>
       <Container>
         <h4 className="colorBlue pt-5 pb-2 text-center">
           ----- CONTACT US -----
@@ -19,8 +26,8 @@ function Contact() {
        <div>
         
         <Row className='ms-2 pb-5'>
-          <Col lg="4" className='bg-white'>
-          <div className=' text-center div-contact pt-2 rounded rounded-4'>
+          <Col lg="4" className='bg-white rounded rounded-4'>
+          <div className=' text-center div-contact pt-2 '>
               <FaLocationDot className='ico'/>
               <p className='text-center pt-4'>123 ranking Street,</p>
               <p className='text-center'>New York, USA</p>

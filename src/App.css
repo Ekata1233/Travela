@@ -731,6 +731,19 @@ z-index: 200;
 .center-background .p-3 {
   color: white !important;
 }
+.params{
+  position: absolute;
+  top: 60%;
+}
+.div-mainImg{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url('/breadcrumb-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 @media  (max-width:426px){
 
   
@@ -818,10 +831,26 @@ z-index: 200;
 .custom-navbar {
   background-color: white !important;
   width: 32%;
+  height: auto; /* Set to auto to adjust dynamically */
+  padding: 0.5rem 1rem; /* Adjust padding to control height */
 }
 
-.custom-navbar .nav-link {
-  color: #13357B !important;
+.navbar-light {
+  padding: 0.2rem 1rem;
+}
+
+.nav-link {
+  font-size: 14px;
+  padding: 5px; /* Further reduced padding for smaller screens */
+}
+
+#discovernow {
+  font-size: 12px;
+  padding: 0.4rem 1rem;
+}
+
+.blue1 {
+  padding: 0.5rem;
 }
 .h11{
 font-size: 60px;
