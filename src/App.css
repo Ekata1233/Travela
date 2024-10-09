@@ -47,6 +47,9 @@ html,body{
   background-color: #13357B !important;
   border-color: #13357B !important;
 }
+.navbar.scrolled .btn:hover{
+  color: white !important;
+}
 
 .navbar.scrolled .custom-navbar {
   transition: color 0.3s ease;
@@ -79,6 +82,12 @@ html,body{
 /* Change dropdown caret color when the navbar is scrolled */
 .navbar.scrolled .custom-caret {
   border-top-color: #13357B !important; /* Change caret color to #13357B when scrolled */
+}
+.navbar.scrolled:hover .custom-caret {
+  border-top-color: white !important; 
+}
+.navbar.scrolled .blue1:hover #pages{
+  color: white !important; 
 }
 .blue1{
   font-family: 'Roboto', sans-serif;

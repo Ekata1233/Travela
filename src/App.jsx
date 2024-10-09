@@ -13,6 +13,9 @@ import Contact from './assets/components/Contact';
 import Packages from './assets/components/Packages';
 import Aboutus from './assets/components/Aboutus';
 import Footer from './Footer';
+import Registration from './assets/components/Registration';
+import Login from './assets/components/Login';
+import Populardesti from './assets/components/Populardesti';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,7 +32,11 @@ function App() {
         <Route path='/Blog' element={<Blog/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Packages' element={<Packages/>}/>
-        
+        <Route path='/Registration' element={<Registration/>}/>
+        <Route path='/Login' element={<Login/>}/>
+        <Route path='/Populardesti' element={<Populardesti/>}/>
+
+
 
 
 

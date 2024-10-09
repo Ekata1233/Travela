@@ -15,8 +15,16 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { IoLocationSharp } from "react-icons/io5";
 import ScrollToTop from "react-scroll-to-top";
+import {Link, useNavigate} from "react-router-dom"
 
 function Header() {
+  const navigate=useNavigate("")
+  function signUp(){
+    navigate("/Registration")
+  }
+  function login(){
+    navigate("/Login")
+  }
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
@@ -65,18 +73,21 @@ function Header() {
           </div>
 
           {/* ------------------------------------------------------------------ */}
+          <div onClick={signUp} style={{cursor:"pointer"}}>
           <FaUser
             className="register px-2 py-2 "
             style={{ width: "35px", height: "35px" }}
           />
-          <span className="py-1">Register</span>
+          <span className="py-1" >Register</span>
+          </div>
 
+          <div onClick={login} style={{cursor:"pointer"}}>
           <FaArrowRightToBracket
             className="px-2 py-2 ms-2"
             style={{ width: "35px", height: "35px" }}
           />
           <span className="py-1">Login</span>
-
+          </div>
           <FaHome
             className="px-2 py-2 ms-2"
             style={{ width: "35px", height: "35px" }}
@@ -86,7 +97,7 @@ function Header() {
             id="nav-dropdown-dark-example"
             title="My Dashboard"
             menuVariant="light"
-            className="py-1 ms-2 "
+            className="py-1 ms-2" style={{zIndex:"300"}}
           >
             <NavDropdown.Item href="#action/3.1">My Profile</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Inbox</NavDropdown.Item>
@@ -127,8 +138,8 @@ function Header() {
                   className=" blue1  py-3 px-2"
                   style={{ marginTop: "-1px" }}
                 >
-                  <Nav.Link
-                    href="/"
+                  <Nav.Link as={Link}
+                    to="/"
                     className="fw-bold py-4 text-light llink"
                     id="hom"
                   >
@@ -139,8 +150,8 @@ function Header() {
                   className=" blue1  py-3 px-2"
                   style={{ marginTop: "-1px" }}
                 >
-                  <Nav.Link
-                    href="/About"
+                  <Nav.Link as={Link}
+                    to="/About"
                     className="fw-bold py-4 text-light llink"
                   >
                     About
@@ -150,8 +161,8 @@ function Header() {
                   className=" blue1  py-3 px-2"
                   style={{ marginTop: "-1px" }}
                 >
-                  <Nav.Link
-                    href="/Services"
+                  <Nav.Link as={Link}
+                    to="/Services"
                     className="fw-bold py-4 text-light"
                   >
                     Services
@@ -161,7 +172,7 @@ function Header() {
                   className=" blue1  py-3 px-2"
                   style={{ marginTop: "-1px" }}
                 >
-                  <Nav.Link href="Packages" className="fw-bold py-4 text-light">
+                  <Nav.Link as={Link} to="Packages" className="fw-bold py-4 text-light">
                     Packages
                   </Nav.Link>
                 </div>
@@ -169,7 +180,7 @@ function Header() {
                   className=" blue1  py-3 px-2"
                   style={{ marginTop: "-1px" }}
                 >
-                  <Nav.Link href="Blog" className="fw-bold py-4 text-light">
+                  <Nav.Link as={Link} to="Blog" className="fw-bold py-4 text-light">
                     Blog
                   </Nav.Link>
                 </div>
@@ -186,34 +197,31 @@ function Header() {
                     className="fw-bold py-3"
                     id="navbarScrollingDropdown"
                   >
-                    <div style={{}}>
-                      <NavDropdown.Item href="/Destination">
-                        Destination
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="/Exploretour">
-                        Explore Tour
-                      </NavDropdown.Item>
-
-                      <NavDropdown.Item href="/TrevelBook">
-                        Travel Booking
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="/Ourgallary">
-                        Our Gallery
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="/TravelGuide">
-                        Travel Guides
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="/Traveltesti">
-                        Travel Testimonial
-                      </NavDropdown.Item>
-                    </div>
+                    
+                    <NavDropdown.Item as={Link} to="Populardesti">Destination</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      Explore Tour
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action5">
+                      Travel Booking
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action5">
+                      Our Gallery
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action5">
+                      Travel Guides
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action5">
+                      Testimonials
+                    </NavDropdown.Item>
+                    
                   </NavDropdown>
                 </div>
                 <div
                   className=" blue1  py-3 px-2"
                   style={{ marginTop: "-1px" }}
                 >
-                  <Nav.Link href="Contact" className="fw-bold py-4 text-light">
+                  <Nav.Link as={Link} to="Contact" className="fw-bold py-4 text-light">
                     Contact
                   </Nav.Link>
                 </div>
