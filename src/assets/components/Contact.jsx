@@ -20,7 +20,7 @@ function Contact() {
         
         <Row className='ms-2 pb-5'>
           <Col lg="4" className='bg-white'>
-          <div className=' text-center div-contact pt-2'>
+          <div className=' text-center div-contact pt-2 rounded rounded-4'>
               <FaLocationDot className='ico'/>
               <p className='text-center pt-4'>123 ranking Street,</p>
               <p className='text-center'>New York, USA</p>

@@ -309,7 +309,7 @@ z-index: 200;
   color: white;
 }
 .destiBtn{
-  width: 100px;
+  width: 130px;
   border: 1px solid #13357B !important;
 }
 .active-btn{
@@ -321,7 +321,12 @@ z-index: 200;
 .dest-img{
   height: 590px !important;
 }
-
+.tour-gallery{
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
+  /* width: 150px; */
+}
 .div-popimg{
   overflow: hidden;
   border-radius: 16px;
@@ -780,7 +785,15 @@ z-index: 200;
     .serviceIcon{
       margin-top: 70px !important;
     }
-  
+    .meetGuide{
+      margin-left: 30px;
+    }
+    .footerPara{
+  margin-left: 55px !important;
+}
+.tour-gallery{
+  display: block;
+ }
   } 
 
 

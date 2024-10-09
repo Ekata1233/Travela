@@ -33,7 +33,7 @@ function TheWorld() {
                         className={`destiBtn rounded-pill py-3 mx-4 w-25 ${activeButton === 'International' ? 'active-btn' : ''}`}
                         onClick={() => handleButtonClick('International')}
                     >
-                        International Tour Category
+                        Inter national Tour Category
                     </Button>
                 </div>
 
