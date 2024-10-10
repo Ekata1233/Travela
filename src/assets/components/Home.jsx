@@ -116,8 +116,7 @@ function Home() {
         <MeetGuide/>
         <PopularBlog/>
         <Testimonial/>
-        <Blog/>
-        <Services/>
+        
 
     </div>
   )

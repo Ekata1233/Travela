@@ -21,8 +21,8 @@ function Registration() {
           </h5>
         </div>
       </div>
-      <Container className="d-flex justify-content-center">
-        <Form className="my-5 w-50 ">
+      <Container className="d-flex justify-content-center ">
+        <Form className="my-5 w-50 shadow   bg-white rounded p-5">
           <h2 className="text-center mb-4">Registration</h2>
           <Form.Group controlId="formGridName" className="mb-4">
             <Form.Label>Name</Form.Label>

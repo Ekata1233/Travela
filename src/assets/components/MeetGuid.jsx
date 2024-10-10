@@ -66,7 +66,7 @@ function MeetGuide() {
                   </div>
                 </div>
 
-                <Card.Body className="guideBody mt-4">
+                <Card.Body className="guideBody mt-4">hghjg
                   <Card.Title className="guideText">{guide.name}</Card.Title>
                   <Card.Text className="guideText">
                     {guide.designation}

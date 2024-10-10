@@ -460,7 +460,12 @@ z-index: 200;
   color: black;
   position: absolute;
   top: 88%;
-  left: 7%;
+  /* left: 7%; */
+}
+.explore1 p{
+  text-align: center;
+  width: 200px;
+  border-right: 1px solid white;
 }
 .link {
   position: absolute;
@@ -642,9 +647,9 @@ z-index: 200;
   z-index: 203;
 }
 
-.guideCard:hover::before {
+ .guideCard:hover::before {
   border-radius: 2%;
-  height: 339px;
+  height: 350px;
   background-color: #13367b81;
 }
 
@@ -672,13 +677,19 @@ z-index: 200;
   transition: .5s;
   z-index: 203;
 }
-
-.guideBody:hover::before {
+ .guideBody:hover::before {
   border-radius: 2%;
   height: 114px;
   background-color: #13357b;
+ 
+  
+ 
 }
 
+.guideCard:hover .guideBody{
+  color: white;
+ 
+}
 .GuideSocial{
   background-color: #13357B;
   color: #f8f9fa;

@@ -22,7 +22,7 @@ function Login() {
         </div>
       </div>
       <Container className="d-flex justify-content-center">
-        <Form className="my-5 w-50 ">
+        <Form className="my-5 w-50 shadow   bg-white rounded p-5">
           <h2 className="text-center mb-4">Login</h2>
 
           <Row className="mb-4">
