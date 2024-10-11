@@ -18,7 +18,7 @@ function Populardesti() {
           ----- Destination -----
         </h4>
         <h1 className="text-center">Popular Destination</h1>
-        <div className="d-flex justify-content-center py-5 d-inline-flex flex-wrap ">
+        <div className="d-flex justify-content-center py-5 d-flex flex-wrap ">
           <Button
             variant=""
             className={`destiBtn rounded-pill py-2 m-3${

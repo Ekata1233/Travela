@@ -16,6 +16,7 @@ import Footer from './Footer';
 import Registration from './assets/components/Registration';
 import Login from './assets/components/Login';
 import Populardesti from './assets/components/Populardesti';
+import Destination from './assets/components/Destination';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +36,10 @@ function App() {
         <Route path='/Registration' element={<Registration/>}/>
         <Route path='/Login' element={<Login/>}/>
         <Route path='/Populardesti' element={<Populardesti/>}/>
+        <Route path='/Destination' element={<Destination/>}/>
+
+        {/* <Route path='/BookNow' element={<Booknow/>}/> */}
+
 
 
 

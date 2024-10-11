@@ -25,6 +25,9 @@ function Header() {
   function login(){
     navigate("/Login")
   }
+  function bookNow(){
+    navigate("/BookNow")
+  }
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
@@ -198,20 +201,20 @@ function Header() {
                     id="navbarScrollingDropdown"
                   >
                     
-                    <NavDropdown.Item as={Link} to="Populardesti">Destination</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item as={Link} to="Destination">Destination</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="Destination">
                       Explore Tour
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item as={Link} to="Destination">
                       Travel Booking
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item as={Link} to="Destination">
                       Our Gallery
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item as={Link} to="Destination">
                       Travel Guides
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item as={Link} to="Destination">
                       Testimonials
                     </NavDropdown.Item>
                     
@@ -226,7 +229,7 @@ function Header() {
                   </Nav.Link>
                 </div>
                 <div className="py-3">
-                  <Button
+                  <Button onClick={bookNow}
                     variant=""
                     id="discovernow"
                     className="rounded-pill fw-bold me-5 py-2 ms-3 mt-3 "
