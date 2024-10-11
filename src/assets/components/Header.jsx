@@ -96,21 +96,19 @@ function Header() {
             style={{ width: "35px", height: "35px" }}
           />
 
-          <NavDropdown
-            id="nav-dropdown-dark-example"
-            title="My Dashboard"
-            menuVariant="light"
-            className="py-1 ms-2" style={{zIndex:"300"}}
-          >
-            <NavDropdown.Item href="#action/3.1">My Profile</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Inbox</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Notification</NavDropdown.Item>
+<NavDropdown
+  title="My Dashboard"
+  className="fw-bold py-1 ms-2"
+  menuVariant="light"
+  style={{ position: 'absolute', zIndex: 9999 }}
+>
+  <NavDropdown.Item href="#action/3.1">My Profile</NavDropdown.Item>
+  <NavDropdown.Item href="#action/3.2">Inbox</NavDropdown.Item>
+  <NavDropdown.Item href="#action/3.3">Notification</NavDropdown.Item>
+  <NavDropdown.Item href="#action/3.4">Account Settings</NavDropdown.Item>
+  <NavDropdown.Item href="#action/3.3">Log Out</NavDropdown.Item>
+</NavDropdown>
 
-            <NavDropdown.Item href="#action/3.4">
-              Account Settings
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Log Out</NavDropdown.Item>
-          </NavDropdown>
         </span>
       </div>
       {/* ------------------------------------------------------------------------ */}
@@ -118,7 +116,7 @@ function Header() {
       <div className="">
         <Navbar
           expand="lg"
-          className=" bg-transparent position-fixed w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5 border-bottom-custom shadow   bg-white rounded"
+          className=" bg-transparent position-fixed w-100  mt-2 mt-sm-2 mt-md-2 mt-lg-5 border-bottom-custom shadow   bg-white rounded"
           style={{ backdropFilter: "blur(1px)", py: "4" }}
         >
           <Container fluid>

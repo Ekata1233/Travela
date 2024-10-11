@@ -15,7 +15,7 @@ html,body{
 }
 .blue.container-fluid{
   position: fixed;
-  z-index: 999;
+  z-index: 700;
 }
 .header-icon:hover{
   color: #13357B;
