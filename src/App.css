@@ -660,12 +660,14 @@ z-index: 200;
   /* color: var(--bs-white) !important; */
   font-size: 17px;
   font-weight: 400;
+  
   outline: none;
   transition: .5s;
+  margin-top: 80px;
   z-index: 203;
 }
 
-.guideBody::before {
+.guideBody::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -677,19 +679,39 @@ z-index: 200;
   transition: .5s;
   z-index: 203;
 }
- .guideBody:hover::before {
+.guideCard:hover ::after {
   border-radius: 2%;
-  height: 114px;
+  height: 115px;
   background-color: #13357b;
  
   
  
 }
 
+.gtext{
+  margin-bottom: 10px;
+  /* background-color: #13357B; */
+  top: -150%;
+  
+  left: 30%;
+  
+}
+.gtext1{
+  top: -20px;
+  left: 25%;
+  
+}
+.guideText{
+  position: absolute;
+  /* line-height: -30px; */
+  z-index: 300;
+  
+}
 .guideCard:hover .guideBody{
   color: white;
- 
 }
+
+
 .GuideSocial{
   background-color: #13357B;
   color: #f8f9fa;

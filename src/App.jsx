@@ -17,6 +17,14 @@ import Registration from './assets/components/Registration';
 import Login from './assets/components/Login';
 import Populardesti from './assets/components/Populardesti';
 import Destination from './assets/components/Destination';
+import ExplorerTour from './assets/components/ExplorerTour';
+import TravelBook from './assets/components/TravelBook';
+import OurGallery from './assets/components/OurGallery';
+import TravelGuid from './assets/components/TravelGuid';
+import Testi from './assets/components/Testi';
+
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,6 +45,14 @@ function App() {
         <Route path='/Login' element={<Login/>}/>
         <Route path='/Populardesti' element={<Populardesti/>}/>
         <Route path='/Destination' element={<Destination/>}/>
+        <Route path='/ExplorerTour' element={<ExplorerTour/>}/>
+        <Route path='/TravelBook' element={<TravelBook/>}/>
+        <Route path='/OurGallery' element={<OurGallery/>}/>
+        <Route path='/TrvaelGuid' element={<TravelGuid/>}/>
+        <Route path='/Testi' element={<Testi/>}/>
+
+
+
 
         {/* <Route path='/BookNow' element={<Booknow/>}/> */}
 

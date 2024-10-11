@@ -66,9 +66,9 @@ function MeetGuide() {
                   </div>
                 </div>
 
-                <Card.Body className="guideBody mt-4">hghjg
-                  <Card.Title className="guideText">{guide.name}</Card.Title>
-                  <Card.Text className="guideText">
+                <Card.Body className="guideBody ">
+                  <Card.Title className="guideText fw-bold gtext">{guide.name}</Card.Title>
+                  <Card.Text className="guideText  gtext1">
                     {guide.designation}
                   </Card.Text>
                 </Card.Body>

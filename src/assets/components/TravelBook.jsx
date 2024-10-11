@@ -1,4 +1,5 @@
 import React from 'react'
+import OnlineBooking from './OnlineBooking'
 
 function TravelBook() {
   return (
@@ -6,10 +7,11 @@ function TravelBook() {
         
         <div className="div-mainImg">
     <div className="overlay">
-      <h1 className="mainFontSize fw-bold text-light">Services</h1>
-      <h5 className="params">Home / Pages / <span className="text-light">Travel Booking</span> </h5>
+      <h1 className="mainFontSize fw-bold text-light">Online Booking</h1>
+      <h5 className="params">Home / Pages / <span className="text-light">Online Booking</span> </h5>
     </div>
   </div>
+  <OnlineBooking/>
     </div>
   )
 }

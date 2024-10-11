@@ -202,19 +202,19 @@ function Header() {
                   >
                     
                     <NavDropdown.Item as={Link} to="Destination">Destination</NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="Destination">
+                    <NavDropdown.Item as={Link} to="ExplorerTour">
                       Explore Tour
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="Destination">
+                    <NavDropdown.Item as={Link} to="TravelBook">
                       Travel Booking
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="Destination">
+                    <NavDropdown.Item as={Link} to="OurGallery">
                       Our Gallery
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="Destination">
+                    <NavDropdown.Item as={Link} to="TrvaelGuid">
                       Travel Guides
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="Destination">
+                    <NavDropdown.Item as={Link} to="Testi">
                       Testimonials
                     </NavDropdown.Item>
                     

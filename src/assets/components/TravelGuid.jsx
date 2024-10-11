@@ -1,4 +1,5 @@
 import React from 'react'
+import MeetGuide from './MeetGuid'
 
 export default function TravelGuid() {
   return (
@@ -9,6 +10,7 @@ export default function TravelGuid() {
       <h5 className="params">Home / Pages / <span className="text-light">Travel Guide</span> </h5>
     </div>
   </div>
+  <MeetGuide/>
     </div>
   )
 }
