@@ -5,12 +5,29 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaRegPlusSquare } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import Modal from 'react-bootstrap/Modal';
 function Populardesti() {
   const [activeButton, setActiveButton] = useState("");
+  const [show, setShow] = useState(false);
+  const [selectedPlace, setSelectedPlace] = useState({ title: "", images: [] });
+  const navigate = useNavigate();
 
   const handleButtonClick = (destination) => {
     setActiveButton(destination);
   };
+
+  const goBook = () => {
+    navigate("/Booknow");
+  };
+
+  const handleClose = () => setShow(false);
+
+  const handleShow = (title, images) => {
+    setSelectedPlace({ title, images });
+    setShow(true);
+  };
+
   return (
     <div>
       <Container>
@@ -88,7 +105,7 @@ function Populardesti() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
+                <FaRegPlusSquare className=" fw-bold " onClick={goBook}/>
               </div>
               <div className="info ps-5">
                 <Button
@@ -96,12 +113,12 @@ function Populardesti() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>New York City</h5>
-                <a href="#" className="text-decoration-none ">
+                <div className="text-decoration-none " style={{cursor:"pointer"}} onClick={()=>handleShow("New York",["/explore-tour-1.jpg","/explore-tour-2.jpg","/explore-tour-3.jpg","/explore-tour-4.jpg","/explore-tour-5.jpg"])}>
                   View All City <FaArrowRight />
-                </a>{" "}
+                </div>{" "}
               </div>
             </div>
             <div className="mt-2 div-popimg">
@@ -111,7 +128,7 @@ function Populardesti() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
+                <FaRegPlusSquare className=" fw-bold " onClick={goBook}/>
               </div>
               <div className="info ps-5">
                 <Button
@@ -119,12 +136,12 @@ function Populardesti() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
-                <h5>Los angelas</h5>
-                <a href="#" className="text-decoration-none ">
+                <h5>Califorina</h5>
+                <div className="text-decoration-none " style={{cursor:"pointer"}} onClick={()=>handleShow("Califorina",["/gallery-1.jpg","/gallery-2.jpg","/gallery-3.jpg","/gallery-4.jpg","/gallery-5.jpg"])}>
                   View All City <FaArrowRight />
-                </a>{" "}
+                </div>{" "}
               </div>
             </div>
             <div className="mt-2 div-popimg">
@@ -134,7 +151,7 @@ function Populardesti() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
+                <FaRegPlusSquare className=" fw-bold " onClick={goBook}/>
               </div>
               <div className="info ps-5">
                 <Button
@@ -144,10 +161,10 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Los angelas</h5>
-                <a href="#" className="text-decoration-none ">
+                <h5>Italy</h5>
+                <div className="text-decoration-none " style={{cursor:"pointer"}} onClick={()=>handleShow("Califorina",["/gallery-6.jpg","/gallery-7.jpg","/gallery-8.jpg","/gallery-9.jpg","/gallery-10.jpg"])}>
                   View All City <FaArrowRight />
-                </a>{" "}
+                </div>{" "}
               </div>
             </div>
           </Col>
@@ -163,7 +180,7 @@ function Populardesti() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
+                <FaRegPlusSquare className=" fw-bold " onClick={goBook}/>
               </div>
               <div className="info ps-5">
                 <Button
@@ -173,10 +190,10 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Las vegas</h5>
-                <a href="#" className="text-decoration-none ">
+                <h5>Paris</h5>
+                <div className="text-decoration-none " onClick={handleShow}>
                   View All City <FaArrowRight />
-                </a>{" "}
+                </div>{" "}
               </div>
             </div>
             <div className="mt-2 div-popimg">
@@ -186,7 +203,7 @@ function Populardesti() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
+                <FaRegPlusSquare className=" fw-bold " onClick={goBook}/>
               </div>
               <div className="info ps-5">
                 <Button
@@ -196,10 +213,10 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Los angelas</h5>
-                <a href="#" className="text-decoration-none ">
+                <h5>Thailand</h5>
+                <div className="text-decoration-none " onClick={handleShow}>
                   View All City <FaArrowRight />
-                </a>{" "}
+                </div>{" "}
               </div>
             </div>
             <div className="mt-2 div-popimg">
@@ -209,7 +226,7 @@ function Populardesti() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
+                <FaRegPlusSquare className=" fw-bold " onClick={goBook}/>
               </div>
               <div className="info ps-5">
                 <Button
@@ -219,10 +236,10 @@ function Populardesti() {
                 >
                   20 Photos
                 </Button>
-                <h5>Los angelas</h5>
-                <a href="#" className="text-decoration-none ">
+                <h5>Tokyo</h5>
+                <div className="text-decoration-none " onClick={handleShow}>
                   View All City <FaArrowRight />
-                </a>{" "}
+                </div>{" "}
               </div>
             </div>
           </Col>
@@ -234,7 +251,7 @@ function Populardesti() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
+                <FaRegPlusSquare className=" fw-bold " onClick={goBook}/>
               </div>
               <div className="info ps-5">
                 <Button
@@ -245,9 +262,9 @@ function Populardesti() {
                   20 Photos
                 </Button>
                 <h5>San francisco</h5>
-                <a href="#" className="text-decoration-none ">
+                <div className="text-decoration-none " onClick={handleShow}>
                   View All City <FaArrowRight />
-                </a>{" "}
+                </div>{" "}
               </div>
             </div>
             <div className="mt-2 div-popimg">
@@ -257,7 +274,7 @@ function Populardesti() {
                 className="plus rounded rounded-circle text-center mt-4 me-4"
                 id="i"
               >
-                <FaRegPlusSquare className=" fw-bold " />
+                <FaRegPlusSquare className=" fw-bold " onClick={goBook}/>
               </div>
               <div className="info ps-5">
                 <Button
@@ -268,11 +285,28 @@ function Populardesti() {
                   20 Photos
                 </Button>
                 <h5>Los angelas</h5>
-                <a href="#" className="text-decoration-none ">
+                <div className="text-decoration-none " onClick={handleShow}>
                   View All City <FaArrowRight />
-                </a>{" "}
+                </div>{" "}
               </div>
             </div>
+            <Modal size="lg" show={show} onHide={handleClose} className="bg-secondary bg-opacity-25">
+            <Modal.Header closeButton>
+              <Modal.Title style={{ color: "#13357b" }} className="">
+                {selectedPlace.title}
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body className="bg-secondary bg-opacity-25">
+              <Row>
+                {selectedPlace.images.map((img, index) => (
+                  <img src={img} key={index} className="w-50 selected my-2" alt={`image-${index}`} />
+                ))}
+              </Row>
+            </Modal.Body>
+            <Modal.Footer>
+             
+            </Modal.Footer>
+          </Modal>
           </Col>
         </Row>
       </Container>

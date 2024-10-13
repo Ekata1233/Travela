@@ -557,7 +557,24 @@ z-index: 200;
   height: 100%;
   display: block;
 }
+.opaci1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0; 
+  height: 0; 
+  background-color: #13357b;
+  opacity: 0;
+  transform: translate(-50%, -50%); 
+  transition: all 0.5s ease; 
+  border-radius: 0; /* No border radius for a rectangle */
+}
 
+.card-img:hover .opaci1 {
+  width: 100%; /* Expand to full width */
+  height: 100%; /* Expand to full height */
+  opacity: 0.4; /* Set the desired opacity */
+}
 .card-img:hover img{
   transform: scale(1.5);
 }
@@ -697,7 +714,7 @@ z-index: 200;
   
 }
 .gtext1{
-  top: -20px;
+  top: -20px; 
   left: 25%;
   
 }
@@ -785,6 +802,9 @@ z-index: 200;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.selected{
+  border-radius: 16px;
 }
 @media  (max-width:426px){
 

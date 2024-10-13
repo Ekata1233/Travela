@@ -100,7 +100,6 @@ function Header() {
   title="My Dashboard"
   className="fw-bold py-1 ms-2"
   menuVariant="light"
-  style={{ position: 'absolute', zIndex: 9999 }}
 >
   <NavDropdown.Item href="#action/3.1">My Profile</NavDropdown.Item>
   <NavDropdown.Item href="#action/3.2">Inbox</NavDropdown.Item>
