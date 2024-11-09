@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Form from "react-bootstrap/Form";
 import Button from 'react-bootstrap/Button';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function Credit_card() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div>
           

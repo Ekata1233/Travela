@@ -42,6 +42,11 @@ function QRcode() {
     const seconds = time % 60;
     return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div style={{ textAlign: 'center' }}>
     {/* <QRCode value={qrValue} size={256} className='mt-5' />
@@ -52,14 +57,14 @@ function QRcode() {
     </div> */}
     <Row>
     <Col>
-    <div className='border border-secondary border-opacity-25'>
-    <QRCodeCanvas value={qrValue} size={200} className='w-50 h-50'/>
+    <div className='border border-secondary border-opacity-25 '>
+    <QRCodeCanvas value={qrValue} size={200} className='w-50 h-50 my-4'/>
     </div>
     </Col>
     <Col>
     <p>Scan the QR using any UPI app on your phone
     </p>
-    <p>{`QR Code will update in: ${formatTime(timeLeft)}`}</p>
+    <p >QR Code will update in:<span className='text-danger'> {`${formatTime(timeLeft)}`}</span></p>
     </Col>
     </Row>
   </div>

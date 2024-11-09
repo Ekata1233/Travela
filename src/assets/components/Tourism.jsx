@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
@@ -12,6 +12,11 @@ function Tourism() {
   const handleButtonClick = (destination) => {
     setActiveButton(destination);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div style={{ marginTop: "140px" }}>
       <h4 className="colorBlue pt-5 pb-2 text-center">

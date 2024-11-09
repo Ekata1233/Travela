@@ -10,6 +10,10 @@
 .blue{
   background-color: #13357b;
 }
+.blue{
+ position: absolute;
+ z-index: 999;
+}
 html,body{
   height: 100%;
 }

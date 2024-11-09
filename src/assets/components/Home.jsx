@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -19,6 +19,11 @@ import {useNavigate} from 'react-router-dom'
 
 function Home() {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
 
   function discoverNow(){
     navigate('/Packages')

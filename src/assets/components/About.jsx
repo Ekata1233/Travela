@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Aboutus from './Aboutus'
 import MeetGuide from './MeetGuid'
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className='text-dark'>
       <div className="div-mainImg">

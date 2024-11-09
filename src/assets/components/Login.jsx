@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/esm/Container";
@@ -11,6 +11,11 @@ function Login() {
   function signUp() {
     navigate("/");
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className="bg-body-secondary">
       <div className="div-mainImg">

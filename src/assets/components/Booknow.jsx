@@ -15,6 +15,11 @@ import COD from "./COD";
 
 function Booknow() {
   const [selectedOption, setSelectedOption] = useState("QR");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
 
   const renderPaymentOption = () => {
     switch (selectedOption) {

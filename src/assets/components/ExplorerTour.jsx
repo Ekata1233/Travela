@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TheWorld from './TheWorld'
 
 function ExplorerTour() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div> <div className="div-mainImg">
     <div className="overlay">

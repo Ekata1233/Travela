@@ -16,8 +16,14 @@ import Navbar from "react-bootstrap/Navbar";
 import { IoLocationSharp } from "react-icons/io5";
 import ScrollToTop from "react-scroll-to-top";
 import {Link, useNavigate} from "react-router-dom"
+import { Dropdown } from "react-bootstrap";
 
 function Header() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const navigate=useNavigate("")
   function signUp(){
     navigate("/Registration")
@@ -50,22 +56,22 @@ function Header() {
         <span className="d-flex text-light">
           <div className="ps-4 icon">
             <FaTwitter
-              className="border border-1 rounded rounded-circle p-2  me-2 header-icon"
+              className="border border-1 rounded rounded-circle p-2  me-3 header-icon"
               style={{ width: "35px", height: "35px" }}
             />
 
             <FaFacebookF
-              className="border border-1 rounded rounded-circle p-2 header-icon me-2"
+              className="border border-1 rounded rounded-circle p-2 header-icon me-3"
               style={{ width: "35px", height: "35px" }}
             />
 
             <FaLinkedinIn
-              className="border border-1 rounded rounded-circle p-2 header-icon me-2"
+              className="border border-1 rounded rounded-circle p-2 header-icon me-3"
               style={{ width: "35px", height: "35px" }}
             />
 
             <FaInstagram
-              className="border border-1 rounded rounded-circle p-2 header-icon me-2"
+              className="border border-1 rounded rounded-circle p-2 header-icon me-3"
               style={{ width: "35px", height: "35px" }}
             />
 
@@ -92,23 +98,15 @@ function Header() {
           <span className="py-1">Login</span>
           </div>
           <FaHome
-            className="px-2 py-2 ms-2"
+            className="px-2 py-2 ms-3"
             style={{ width: "35px", height: "35px" }}
           />
 
-<NavDropdown
-  title="My Dashboard"
-  className="fw-bold py-1 ms-2"
-  menuVariant="light"
->
-  <NavDropdown.Item href="#action/3.1">My Profile</NavDropdown.Item>
-  <NavDropdown.Item href="#action/3.2">Inbox</NavDropdown.Item>
-  <NavDropdown.Item href="#action/3.3">Notification</NavDropdown.Item>
-  <NavDropdown.Item href="#action/3.4">Account Settings</NavDropdown.Item>
-  <NavDropdown.Item href="#action/3.3">Log Out</NavDropdown.Item>
-</NavDropdown>
+<span className="py-1">My Profile</span>
+
 
         </span>
+        
       </div>
       {/* ------------------------------------------------------------------------ */}
       {/* ----------------------Navrbar Start--------------------------------------------- */}
@@ -130,7 +128,7 @@ function Header() {
             />
             <Navbar.Collapse id="navbarScroll">
               <Nav
-                className=" navbar-light me-auto my-2 my-lg-0 custom-navbar"
+                className=" navbar-light me-auto my-2 my-lg-0 custom-navbar "
                 style={{ maxHeight: "100px", height: "100px" }}
                 navbarScroll
               >

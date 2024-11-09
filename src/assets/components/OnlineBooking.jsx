@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,6 +7,11 @@ import Form from "react-bootstrap/Form";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 function OnlineBooking() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div style={{ marginTop: "120px" }}>
       <div className="div-ballonImg">

@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PopularBlog from './PopularBlog'
 
 function Blog() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className=''><div className="div-mainImg">
     <div className="overlay">

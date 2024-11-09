@@ -8,6 +8,11 @@ function AwesomePack() {
   const [activeButton, setActiveButton] = useState('');
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
 
   const cards = [
     {

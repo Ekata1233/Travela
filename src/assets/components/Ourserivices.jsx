@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,6 +8,11 @@ import { FaHotel } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaCog } from "react-icons/fa";
 function Ourserivices() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+    
+    
   return (
     <div className='bg-body-tertiary  py-5' style={{marginTop:"230px"}}>
         <Container className=''>

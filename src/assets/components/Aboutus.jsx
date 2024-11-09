@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -6,6 +6,11 @@ import { FaArrowRight } from "react-icons/fa6";
 import Button from 'react-bootstrap/Button';
 
 function Aboutus() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className=' 'style={{marginTop:"250px"}}>
          <Container className='mb-5'>
